@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: #fff0f3;
+}
+
+.navbar {
+    padding: 16px 80px;
+    background: #f0758a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(117, 108, 108, 0.3);
+}
+
+.logo {
+    width: 72px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffe4ec;
+}
+
+.main {
+    padding: 80px 80px;
+}
+
+.header {
+    font-size: 58px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    color: #f0758a;
+    margin-bottom: 16px;
+}
+
+.project-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.projects {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-title {
+    font-family: "Fredoka", sans-serif;
+    color: #ff5471;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.tag-cont {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags {
+    background: #fff0f3;
+    color: #ff5471;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 24px;
+}
+
+.mainfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 60px 80px;
+    background: #f0758a;
+    color: #fff0f3;
+
+}
+
+.mainfooter1 {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-header {
+    margin-bottom: 8px;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    gap: 8px;
+    list-style: none;
+}
+
+.icons {
+    width: 20px;
+}
+
+.footer-logo {
+    width: 40px;
+}
+
+.subfooter {
+    text-align: center;
+    padding: 20px;
+    background: #ff5471;
+    color: #fff0f3;
+}
