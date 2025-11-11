@@ -1,10 +1,17 @@
-const open1 = document.getElementById("open1");
-const open2 = document.getElementById("open2");
-const open3 = document.getElementById("open3");
-const open4 = document.getElementById("open4");
-
-function modal(){
-    
+function openGmail() {
+    const email = "arevalo.patpat082nd@gmail.com";
+    const subject = encodeURIComponent("Let's Connect!");
+    const body = encodeURIComponent("Hi Patricia,");
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    window.open(gmailURL, "_blank");
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+function downloadCV() {
+    const cvUrl = "./Patricia-Arevalo-CV.pdf"; 
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Patricia-Arevalo-CV.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
