@@ -39,7 +39,7 @@
                     Computer Engineering graduate from the University of Rizal System, and I enjoy
                     bringing ideas to life using HTML, CSS, JavaScript, and WordPress.
                 </p>
-                <button class="btn-dl">
+                <button class="btn-dl" onclick="downloadCV()">
                     <div>
                         <svg class="download" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -205,14 +205,13 @@
             <h1 class="header">Work Experience</h1>
             <div class="exp-container">
                 <div class="work">
-                    <img src="../pics/work-case-filled-svgrepo-com.svg" alt="worok-icon">
-                    <h3 class="work-title">On-the-Job Training</h3>
-                    <h4 class="company">Energy Regulatory Commission (ERC)</h4>
-                    <p class="work-content">
-                        I helped improve website performance by identifying and reporting bugs to make things run
-                        smoother for users. I also installed antivirus software, essential drivers, and handled basic
-                        troubleshooting and maintenance for company computers to keep everything in good shape.
-                    </p>
+                    <div class="icon">
+                        <img class="work-icon" src="../pics/work-case-filled-svgrepo-com.svg" alt="work-icon">
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">On-the-Job Training</h3>
+                        <h4 class="company">Energy Regulatory Commission (ERC)</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,5 +249,6 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>

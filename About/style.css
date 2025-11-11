@@ -158,3 +158,65 @@ body {
 .webstacks{
  margin-top: 100px;
 }
+
+.header{
+    color: #f0758a;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 58px;
+}
+
+.stacks {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.stacks li {
+    list-style: none;
+    padding: 20px;
+    border-radius: 24px;
+    transition: 0.15s;
+    margin-bottom: 12px;
+    background: #fff0f3;
+    color: #ff5471;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid rgba(228, 228, 228, 0);
+}
+
+.stacks li:hover {
+    border: 2px solid rgba(228, 228, 228, 1);
+    background: #ff5471;
+    color: #fff0f3;
+}
+
+.work{
+    display: flex;
+    gap: 20px;
+}
+.work-icon{
+    width: 40px;
+}
+
+.work-title{
+    color: #ff5471;
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.company{
+    color: rgba(92, 92, 92, 0.8);
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.work-content{
+    color: #3a3a3a;
+    
+}
