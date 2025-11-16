@@ -114,7 +114,7 @@ body {
 }
 
 .main {
-    padding: 100px 80px;
+    padding: 80px 80px;
 }
 
 .contents-intro {
@@ -202,6 +202,7 @@ body {
 .exp {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
 .work {
@@ -296,8 +297,105 @@ body {
     color: #fff0f3;
 }
 
+@media screen and (max-width:1160px) {
+    .header {
+        font-size: 40px;
+    }
+
+    .hobby {
+        flex-direction: column-reverse;
+    }
+
+    .img-hobby {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobby {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .exp {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .header {
+        margin-top: 0;
+    }
+
+    .cert-container {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .mainfooter {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 60px 40px;
+    }
+
+    .mainfooter1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .subfooter {
+        padding: 16px;
+    }
+}
+
 /* RESPONSIVE */
 @media (max-width: 426px) {
+    .work-icon, .cert-icon{
+        width: 24px;
+    }
+
+    .work-title, .cert-title{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .given-by, .company, .date{
+        font-size: 14px;
+    }
+
+    .header{
+        font-size: 32px;
+    }
+    .hobby{
+        gap: 32px;
+    }
+
+    .img-hobby{
+        width: 100%;
+    }
+
+    .intro1{
+        font-size: 24px;
+    }
+    .contents-intro {
+        padding: 32px;
+    }
+
+    .my-pic {
+        width: 100%;
+    }
+
+    .main {
+        padding: 40px;
+    }
+
     .nav-links {
         display: none;
     }
